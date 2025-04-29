@@ -1,0 +1,107 @@
+{
+    "info": {
+        "name": "Django Assignment API Collection",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_postman_id": "django-assignment-20250429134931"
+    },
+    "item": [
+        {
+            "name": "Get All Clients",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/clients/",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "clients",
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Client",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"client_name\": \"Company ABC\"\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/clients/",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "clients",
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Projects",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/projects/",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "projects",
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Project",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n    \"project_name\": \"Project Alpha\",\n    \"client\": 1,\n    \"users\": [\n        1\n    ]\n}"
+                },
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/projects/",
+                    "protocol": "http",
+                    "host": [
+                        "127.0.0.1"
+                    ],
+                    "port": "8000",
+                    "path": [
+                        "api",
+                        "projects",
+                        ""
+                    ]
+                }
+            }
+        }
+    ]
+}
